@@ -1,0 +1,6 @@
+sequenceDiagram
+    BROWSER->>+SERVER: GET PAGE 
+    SERVER-->>BROWSER: data.json
+    BROWSER->>+SERVER: POST : new_note_spa(payload)
+    SERVER-->>-BROWSER: Responce (201) : "message":"note created"
+ 
