@@ -1,3 +1,4 @@
+import { useState } from 'react'
 const Header =(props)=>{
   return(<h1>{props.course}</h1>)
 }
@@ -7,6 +8,7 @@ const Part = (props)=>{
 }
 
 const Content = (props)=>{
+
   return (  
     <div>
       <Part part={props.part1}  exercises={props.exercises1} />
@@ -28,6 +30,7 @@ const App = () => {
   const exercises2 = 7
   const part3 = 'State of a component'
   const exercises3 = 14
+  console.log(useState(0))
 
   return (
     <div>
